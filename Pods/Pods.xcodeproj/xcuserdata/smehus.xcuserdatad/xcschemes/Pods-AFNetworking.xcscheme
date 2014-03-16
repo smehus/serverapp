@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "65D6D95F18C3DC1600036B36"
-               BuildableName = "ServerApp.app"
-               BlueprintName = "ServerApp"
-               ReferencedContainer = "container:ServerApp.xcodeproj">
+               BlueprintIdentifier = "3AD2BA2E8A2B4E759F550070"
+               BuildableName = "libPods-AFNetworking.a"
+               BlueprintName = "Pods-AFNetworking"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,26 +28,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "65D6D98018C3DC1600036B36"
-               BuildableName = "ServerAppTests.xctest"
-               BlueprintName = "ServerAppTests"
-               ReferencedContainer = "container:ServerApp.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "65D6D95F18C3DC1600036B36"
-            BuildableName = "ServerApp.app"
-            BlueprintName = "ServerApp"
-            ReferencedContainer = "container:ServerApp.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -58,15 +39,6 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "65D6D95F18C3DC1600036B36"
-            BuildableName = "ServerApp.app"
-            BlueprintName = "ServerApp"
-            ReferencedContainer = "container:ServerApp.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -76,15 +48,6 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "65D6D95F18C3DC1600036B36"
-            BuildableName = "ServerApp.app"
-            BlueprintName = "ServerApp"
-            ReferencedContainer = "container:ServerApp.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
