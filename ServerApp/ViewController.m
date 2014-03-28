@@ -182,7 +182,7 @@
 
 - (UIView *)stackView:(SSStackedPageView *)stackView pageForIndex:(NSInteger)index {
     
-    ItemView *thisView = (ItemView*)[stackView dequeueReusablePage];
+    UIView *thisView = (ItemView*)[stackView dequeueReusablePage];
     if (!thisView) {
         thisView = [self.views objectAtIndex:index];
         thisView.backgroundColor = [UIColor getRandomColor];
