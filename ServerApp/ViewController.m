@@ -13,6 +13,7 @@
 #import "UIColor+CatColors.h"
 #import "AddViewController.h"
 #import "ItemView.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface ViewController () <UITableViewDataSource,
                                 UITableViewDelegate,
@@ -122,7 +123,7 @@
     for (NSDictionary *dict in items) {
         i++;
         Item *item = [[Item alloc] initWithName:[dict objectForKey:@"itemTitle"] andID:[dict objectForKey:@"_id"]];
-        ItemView *thisView = [[ItemView alloc] initWithFrame:CGRectMake(0.f, 0.f, 200.f, 100.f)];
+        UIView *thisView = [[UIView alloc] initWithFrame:CGRectMake(0.f, 0.f, 200.f, 100.f)];
         [self drawView:thisView andItem:item];
         
         [self.views addObject:thisView];
@@ -180,9 +181,9 @@
 }
 
 
-- (UIView *)stackView:(SSStackedPageView *)stackView pageForIndex:(NSInteger)index {
-    
-    UIView *thisView = (ItemView*)[stackView dequeueReusablePage];
+- (UIView *)stackView:(SSStackedPageView *)stackView pageForIndex:(NSInteger)index
+{
+    UIView *thisView = [stackView dequeueReusablePage];
     if (!thisView) {
         thisView = [self.views objectAtIndex:index];
         thisView.backgroundColor = [UIColor getRandomColor];
@@ -190,8 +191,9 @@
         thisView.layer.masksToBounds = YES;
     }
     return thisView;
-    
 }
+
+
 
 - (NSInteger)numberOfPagesForStackView:(SSStackedPageView *)stackView {
     
